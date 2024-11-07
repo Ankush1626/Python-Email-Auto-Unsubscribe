@@ -9,7 +9,7 @@ This Python script automatically searches through your Gmail inbox for unsubscri
 This is an example of links.txt which contains the link visited along with it's status code.
 
 <div align="center">
-<img src="https://github.com/Ankush1626/Python-Email-Auto-Unsubscribe/blob/main/links.txt%20ss.png" align="center" style="width: 100%" />
+<img src="https://github.com/Ankush1626/Python-Email-Auto-Unsubscriber-/blob/main/links.txt%20ss.png" align="center" style="width: 100%" />
 </div>
 
 ## Features
