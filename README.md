@@ -21,7 +21,7 @@ This Python script automatically searches through your Gmail inbox for unsubscri
 1. **Clone the repository**:
    
    ```bash
-   git clone https://github.com/your-username/unsubscribe-link-finder.git
+   git clone https://github.com/Ankush1626/Python-Email-Auto-Unsubscribe
    ```
 
 2. **Create a `.env` file** in the root of the project directory with your Gmail credentials:
