@@ -32,8 +32,12 @@ This Python script automatically searches through your Gmail inbox for unsubscri
    PASSWORD="your-app-password"
    ```
 
+   - Repace ```your-email@gmail.com``` with your own gmail and ```your-app-password``` with your own app password.
+     
    - For Gmail, you should use an App Password instead of your regular email password. To create an App Password, enable Two-Factor Authentication (2FA) on your Google account and generate an app-specific password.
+   
    - Important: The .env file is included to keep your credentials secure. Do not upload or share this file publicly. Ensure that the credentials are correct before running the script.
+   
    - You can generate an app password [here](https://support.google.com/accounts/answer/185833?hl=en).
 
 4. **Install required modules**:
