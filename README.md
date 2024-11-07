@@ -22,18 +22,21 @@ This Python script automatically searches through your Gmail inbox for unsubscri
    
    ```bash
    git clone https://github.com/Ankush1626/Python-Email-Auto-Unsubscribe
+   cd Python-Email-Auto-Unsubscribe
    ```
 
-2. **Create a `.env` file** in the root of the project directory with your Gmail credentials:
+2. **.env file**: The repository includes a .env file containing environment variables for your Gmail credentials:
 
    ```text
    EMAIL="your-email@gmail.com"
    PASSWORD="your-app-password"
    ```
 
-   **Note**: For Gmail, you should use an **App Password** instead of your regular email password.You need to turn on 2-Factor Authentication in your google account to create an app password for gmail. You can generate an app password [here](https://support.google.com/accounts/answer/185833?hl=en).
+   - For Gmail, you should use an App Password instead of your regular email password. To create an App Password, enable Two-Factor Authentication (2FA) on your Google account and generate an app-specific password.
+   - Important: The .env file is included to keep your credentials secure. Do not upload or share this file publicly. Ensure that the credentials are correct before running the script.
+   - You can generate an app password [here](https://support.google.com/accounts/answer/185833?hl=en).
 
-3. **Install required modules**:
+4. **Install required modules**:
 
     Install the required dependencies listed in the requirements.txt file:
     
