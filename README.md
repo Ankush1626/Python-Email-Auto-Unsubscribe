@@ -14,14 +14,7 @@ This Python script automatically searches through your Gmail inbox for unsubscri
 ## Requirements
 
 - Python 3.6+
-- Check requirements.txt file for required modules 
-- Install them by giving commoand pip install requirements.txt 
-
-You can install the required dependencies using `pip`:
-
-```bash
-pip install requests beautifulsoup4 python-dotenv
-```
+- Check more below in 3rd step of Setup.
 
 ## Setup
 
