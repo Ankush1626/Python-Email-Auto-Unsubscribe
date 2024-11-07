@@ -1,1 +1,79 @@
 # Python-Email-Auto-Unsubscribe
+
+This Python script automatically searches through your Gmail inbox for unsubscribe links, visits each link, and logs the result in a file (links.txt). It uses IMAP to access your inbox, BeautifulSoup to extract the links, and Requests to visit each link.
+
+**Note**: This is not 100% accurate and will only unsubscribe from emails that provide a direct unsubscribe link. Emails requiring you to fill out a form after clicking the unsubscribe link will not be processed. Additionally, some important emails, like banking or service-related messages, might also contain unsubscribe links, and this code could unsubscribe from them as well. Be sure to check your inbox first and modify the code as necessary to fit your needs.
+
+## Features
+- Connects to Gmail via IMAP and logs into your account securely.
+- Searches all emails for unsubscribe links.
+- Extracts the unsubscribe links from HTML email bodies.
+- Visits each unsubscribe link and logs whether it was successfully visited or failed.
+- Saves the status and link information into a text file (`links.txt`).
+
+## Requirements
+
+- Python 3.6+
+- Check requirements.txt file for required modules 
+- Install them by giving commoand pip install requirements.txt 
+
+You can install the required dependencies using `pip`:
+
+```bash
+pip install requests beautifulsoup4 python-dotenv
+```
+
+## Setup
+
+1. **Clone the repository**:
+   
+   ```bash
+   git clone https://github.com/your-username/unsubscribe-link-finder.git
+   ```
+
+2. **Create a `.env` file** in the root of the project directory with your Gmail credentials:
+
+   ```text
+   EMAIL="your-email@gmail.com"
+   PASSWORD="your-app-password"
+   ```
+
+   **Note**: For Gmail, you should use an **App Password** instead of your regular email password.You need to turn on 2-Factor Authentication in your google account to create an app password for gmail. You can generate an app password [here](https://support.google.com/accounts/answer/185833?hl=en).
+
+3. **Install required modules**:
+
+    Install the required dependencies listed in the requirements.txt file:
+    
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. **Run the script**:
+   
+   Once you've set up the `.env` file, you can run the script:
+
+   ```bash
+   python main.py
+   ```
+
+4. The script will generate a `links.txt` file, where each line will contain the status and the corresponding link, like so:
+
+   ```
+   Successfully visited - http://example.com/unsubscribe
+   Failed to visit (Error 404) - http://example.com/unsubscribe
+   ```
+
+## How it Works
+
+1. The script connects to your Gmail account using IMAP, authenticates using the credentials in the `.env` file, and searches the inbox for emails containing the word "unsubscribe".
+2. It then extracts the unsubscribe links from the HTML content of those emails.
+3. Each link is visited using the `requests` library, and the script logs the result (whether the link was successfully visited or an error occurred).
+4. Finally, it writes all the links and their statuses into `links.txt`.
+
+# Dislaimer
+
+<div align="center">
+This code was not originally developed by me. I learned it from a tutorial by the channel Tech with Tim on Youtube and hold no copyright over this code or its related files.
+<br/>
+PS - I did not just copy and paste the code. Instead, I understood it and then rewrote the entire code from scratch.
+</div>
