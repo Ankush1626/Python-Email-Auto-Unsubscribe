@@ -4,6 +4,8 @@ This Python script automatically searches through your Gmail inbox for unsubscri
 
 **Note**: This is not 100% accurate and will only unsubscribe from emails that provide a direct unsubscribe link. Emails requiring you to fill out a form after clicking the unsubscribe link will not be processed. Additionally, some important emails, like banking or service-related messages, might also contain unsubscribe links, and this code could unsubscribe from them as well. Be sure to check your inbox first and modify the code as necessary to fit your needs.
 
+**Read my blog for better understanding of working of the code - [Ankush Kapoor Blog Page](https://ankushhkapoor.wordpress.com/)**
+
 ## Screenshot
 
 This is an example of links.txt which contains the link visited along with it's status code.
